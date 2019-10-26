@@ -1,0 +1,50 @@
+.text{
+	font-size: 10px;
+	font-family: 'Questrial', sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	float:right;
+	padding-bottom: 20px;
+
+
+}
+
+#right{
+	float: right;
+	padding-left: 1px;
+	width:48.5%;
+}
+
+#left{
+	float: left;
+	width:48.5%;
+}
+
+
+.photos{
+	float: right;
+	padding-right: 200px;
+	padding-top: 15px;
+	max-height: 25%;
+	max-width: 25%;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+	justify-content: space-between;
+	vertical-align: top;
+}
+#homePhoto1{
+	position: relative;
+}
+#homePhoto2{
+	position: relative;
+}
+
+#homePhoto3{
+	position: relative;
+}
+#homePhoto4{
+	position: relative;
+}
+

@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Streamlime Guide</title>
+  <link rel="stylesheet" href="../css/index.css" type="text/css">
+  <link rel="stylesheet" href="../css/global.css" type="text/css">
+   <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+	<!-- Latest compiled and minified CSS -->
+
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<style>
+		h2{
+			font-size:20px;
+		}
+		#weekday{
+			display:block;
+		}
+		#saturday{
+			display:none;
+		}
+		#latenight{
+			display:none;
+		}
+		#livingston{
+			display:none;
+		}
+		#weekday h2{
+			margin-top:120px;
+		}
+		#saturday h2{
+			margin-top:120px;
+		}
+		#latenight h2{
+			margin-top:120px;
+		}
+		#livingston h2{
+			margin-top:120px;
+		}
+		.container{
+			width: 800px;
+			margin: 0 auto;
+		}
+		.tabs li a{
+			font-family: 'Exo 2', sans-serif;
+			text-decoration: none;
+			color: black;
+		}
+
+
+		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+		}
+		ul.tabs li{
+			background: none;
+			color: #222;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+		}
+
+		ul.tabs li.current{
+			background: #ededed;
+			color: #222;
+		}
+
+		.tab-content{
+			display: none;
+			background: #ededed;
+			padding: 15px;
+		}
+
+		.tab-content.current{
+			display: inherit;
+		}
+	</style>
+</head>
+<body>
+	<div id="page">
+		<div class="logo">
+			<img src="../images/logo.png" alt="Logo"></div>
+
+		<div class="media" id=facebook>
+			<img src="../images/facebook.png" alt="Facebook Logo"></div>
+		<div class="media" id=twitter>
+			<img src="../images/twitter.png" alt="Twitter Logo"></div>
+		<div class="media" id=youtube>
+			<img src="../images/youtube.png" alt="Youtube Logo"></div>
+
+		<div id="header">	
+			<ul>
+     			<li><a href="../index.html">Home</a></li>
+     			<li>|</li>
+     			<li class="currentPage"><a>Schedule</a></li>
+    			<li>|</li>
+     			<li><a>Shop</a></li>
+     			<li>|</li>
+     			<li><a href="../subfolder/about.html">About</a></li>
+     			<li>|</li>
+      			<li><a>News</a></li>
+      			<li>|</li>
+      			<li><a>Contact Us</a></li>
+  			</ul></div>	
+  		<div class="clear" style = "height: 50px;"></div>
+  		
+  		<h3>Streamline Bus</h3>
+  		<div class="text" id="right">
+  			<h2>Opperating Hours</h2>
+  			<h3>The bus' operating hours are given below. They vary daily.</h3>
+        <h3>Monday tru Friday 6:30 AM - 7:15 PM </h3>
+
+  			<h2>Free Travel</h2>
+  			<h3>The bus is free to ride on for all people of Bozeman and Livingston. This service is a free and cheap alternative to driving, and can also relieve the cost of a parking pass if you take it to school.</h3>
+
+  		</div>
+
+  		<div id="left" class="text">
+  			<h2>Streamline Bus</h2>
+  			<h3>Streamline offers fare-free service throughout the Bozeman area to fulfill everyone’s transportation needs. Our routes provide service to and from Bozeman, Belgrade, Four Corners, Livingston and seasonal routes to Bridger Bowl. Streamline also connects with the the Skyline Bus System for travel to and from Big Sky. </h3>
+
+  			<h2>How to Ride the Bus</h2>
+  			<h3>Stop at the bus stop next to the Strand Student Union Building. The bus will pick up and drop off from here. You can step on and follow any of the routes detailed below. The operating hours are also given below.</h3>
+  		</div>
+
+  		<div class="clear"></div>
+
+		<ul class="tabs" style = "margin-top:60px;">
+			<li id = "1" class="tab-link current"><a href="#">Weekday</a></li>
+			<li id = "2" class = "tab-link"><a href="#">Saturday</a></li>
+			<li id = "3" class = "tab-link"><a href="#">Late Night</a></li>
+			<li id = "4" class = "tab-link"><a href="#">Livingston</a></li>
+		</ul>
+
+  		<div id = "weekday">
+			<div class = "text" style = "height:400px;">
+				<h2 style = "text-align: center;text-decoration: underline;font-weight:bold;">Schedule:</h2>
+				<ul style = "font-size: 17px;
+    padding-left: 0;
+    background-color: white;
+    text-align: center;"><br>
+					<li>
+					Monday Thru Friday
+					</li><br><br>
+					<li>
+						6:30am to 7:15pm
+					</li><br><br>
+
+				</ul>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<img src = "../images/weekday.jpg" style = "height:100%;width:100%;">
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">
+					<span style = "color:green;    font-weight: 700;
+">GREENLINE EXPRESS »</span>
+					MSU Strand Union, Gallatin Valley Mall, Four Corners, Belgrade
+<br>
+					<span style = "color:#e1e100;    font-weight: 700;
+">YELLOWLINE UNIVERSITY »</span>
+					MSU Strand Union, Gallatin Valley Mall, Valley Commons
+					<br>
+
+					<span style = "color:orange;    font-weight: 700;
+">ORANGELINE UNIVERSITY »</span>
+					MSU Strand Union, Downtown, Public Library, Bozeman Deaconess Hospital
+					<br>
+
+					<span style = "color:blue;    font-weight: 700;
+">BLUELINE RETAIL »</span>
+					MSU Strand Union, Downtown, Bridger Peaks, Gallatin Center
+					<br>
+
+					<span style = "color:red;    font-weight: 700;
+">REDLINE DOWNTOWN »</span>
+					MSU Strand Union, Downtown, Gallatin Valley Mall, Bozeman High School</p>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">Our mission is to be the provider of mobility services and alternatives to the single occupancy vehicle. We offer fare-free service throughout the Bozeman area to fulfill everyone’s transportation needs. Paratransit services are also provided by Galavan Transit. Join your fellow riders in helping save on parking and gas and keeping our community green. And thank you for supporting and taking public transit!</p>
+
+			</div>
+		</div>
+		<div id = "saturday">
+			<div class = "text" style = "height:400px;">
+				<h2 style = "text-align: center;text-decoration: underline;font-weight:bold;">Schedule:</h2>
+				<ul style = "font-size: 17px;
+    padding-left: 0;
+    background-color: white;
+    text-align: center;"><br>
+					<li>
+						Saturdays
+					</li><br><br>
+					<li>
+						7:30am to 6:15pm
+					</li><br><br>
+				</ul>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<img src = "../images/saturday.jpg" style = "height:100%;width:100%;">
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">
+				<span style = "color:#e1e100;    font-weight: 700;
+">YELLOWLINE UNIVERSITY »</span>
+				MSU Strand Union, Gallatin Valley Mall, Valley Commons
+				<br>
+
+				<span style = "color:orange;    font-weight: 700;
+">ORANGELINE UNIVERSITY »</span>
+				MSU Strand Union, Downtown, Public Library, Bozeman Deaconess Hospital
+				<br>
+
+				<span style = "color:blue;    font-weight: 700;
+">BLUELINE RETAIL »</span>
+				MSU Strand Union, Downtown, Bridger Peaks, Gallatin Center
+				<br>
+
+				<span style = "color:red;    font-weight: 700;
+">REDLINE DOWNTOWN »</span>
+				MSU Strand Union, Downtown, Gallatin Valley Mall, Bozeman High School</p>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">Our mission is to be the provider of mobility services and alternatives to the single occupancy vehicle. We offer fare-free service throughout the Bozeman area to fulfill everyone’s transportation needs. Paratransit services are also provided by Galavan Transit. Join your fellow riders in helping save on parking and gas and keeping our community green. And thank you for supporting and taking public transit!</p>
+
+			</div>
+		</div>
+		<div id = "latenight">
+			<div class = "text" style = "height:400px;">
+				<h2 style = "text-align: center;text-decoration: underline;font-weight:bold;">Schedule:</h2>
+				<ul style = "font-size: 17px;
+    padding-left: 0;
+    background-color: white;
+    text-align: center;"><br>
+					<li>
+						Thursday Thru Saturday
+					</li><br><br>
+					<li>
+						8:00pm to 2:30am
+					</li><br><br>
+
+				</ul>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<img src = "../images/latenight.jpg" style = "height:100%;width:100%;">
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">
+				<span style = "color:#e1e100;    font-weight: 700;
+">DOWNTOWN »</span>
+					MSU Strand Union, Gallatin Valley Mall, Valley Commons
+					<br>
+
+					<span style = "color:orange;    font-weight: 700;
+">UPSTREAM »</span>
+					MSU Strand Union, Downtown, Public Library, Bozeman Deaconess Hospital
+					<br>
+
+					</p>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">Our mission is to be the provider of mobility services and alternatives to the single occupancy vehicle. We offer fare-free service throughout the Bozeman area to fulfill everyone’s transportation needs. Paratransit services are also provided by Galavan Transit. Join your fellow riders in helping save on parking and gas and keeping our community green. And thank you for supporting and taking public transit!</p>
+
+			</div>
+		</div>
+		<div id = "livingston">
+			<div class = "text" style = "height:400px;">
+				<h2 style = "text-align: center;text-decoration: underline;font-weight:bold;">Schedule:</h2>
+				<ul style = "font-size: 17px;
+    padding-left: 0;
+    background-color: white;
+    text-align: center;"><br>
+					<li>
+						Monday Thru Friday
+					</li><br><br>
+					<li>
+						5:50am to 6:45pm
+					</li><br><br>
+				</ul>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<img src = "../images/livingston.jpg" style = "height:100%;width:100%;">
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">
+				<span style = "color:#e1e100;    font-weight: 700;
+">MORNING »</span>
+					
+					<br>
+
+					<span style = "color:orange;    font-weight: 700;
+">EVENING »</span>
+					
+					<br>
+
+				</p>
+			</div>
+			<div class = "text" style = "height:400px;">
+				<p style = "    font-size: 15px;
+    padding: 25px;">Our mission is to be the provider of mobility services and alternatives to the single occupancy vehicle. We offer fare-free service throughout the Bozeman area to fulfill everyone’s transportation needs. Paratransit services are also provided by Galavan Transit. Join your fellow riders in helping save on parking and gas and keeping our community green. And thank you for supporting and taking public transit!</p>
+
+			</div>
+		</div>
+
+    </div>
+    <div class="clear"></div>
+    <div id="footer">
+      	<ul>
+      		<li><a>Home</a></li>
+     		<li>|</li>
+     		<li><a href="../subfolder/schedule.html">Schedule</a></li>
+     		<li>|</li>
+     		<li><a href="../subfolder/about.html">About</a></li>
+     	</ul>
+      	TM &amp; &copy; 2017 Streamline.  All Rights Reserved.
+  	</div>
+
+</body>
+<script>
+    $(document).ready(function(){
+
+        $('ul.tabs li').click(function(){
+            var tab_id = $(this).attr('data-tab');
+
+            $('ul.tabs li').removeClass('current');
+            $('.tab-content').removeClass('current');
+
+            $(this).addClass('current');
+            $("#"+tab_id).addClass('current');
+        })
+
+    });
+	$("#1").on("click",function(e){
+	    e.preventDefault();
+	   $("#weekday").css({
+		   "display":"block"
+	   });
+        $("#saturday").css({
+            "display":"none"
+        });
+        $("#latenight").css({
+            "display":"none"
+        });
+        $("#livingston").css({
+            "display":"none"
+        });
+	});
+    $("#2").on("click",function(e){
+        e.preventDefault();
+        $("#weekday").css({
+            "display":"none"
+        });
+        $("#saturday").css({
+            "display":"block"
+        });
+        $("#latenight").css({
+            "display":"none"
+        });
+        $("#livingston").css({
+            "display":"none"
+        });
+    });
+    $("#3").on("click",function(e){
+        e.preventDefault();
+        $("#weekday").css({
+            "display":"none"
+        });
+        $("#saturday").css({
+            "display":"none"
+        });
+        $("#latenight").css({
+            "display":"block"
+        });
+        $("#livingston").css({
+            "display":"none"
+        });
+    });
+    $("#4").on("click",function(e){
+        e.preventDefault();
+        $("#weekday").css({
+            "display":"none"
+        });
+        $("#saturday").css({
+            "display":"none"
+        });
+        $("#latenight").css({
+            "display":"none"
+        });
+        $("#livingston").css({
+            "display":"block"
+        });
+    });
+</script>
+</html>

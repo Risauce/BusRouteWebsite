@@ -1,0 +1,22 @@
+.text{
+	font-size: 10px;
+	font-family: 'Questrial', sans-serif;
+	display: inline-block;
+	vertical-align: top;
+	width: 50%;
+	float:right;
+	padding-bottom: 20px;
+
+
+}
+
+#right{
+	float: right;
+	padding-left: 1px;
+	width:48.5%;
+}
+
+#left{
+	float: left;
+	width:48.5%;
+}
